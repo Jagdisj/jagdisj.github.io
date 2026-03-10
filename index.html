@@ -1,14 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> E Jagadish | AI Developer Portfolio</title>
 
-<title>Jagdish Portfolio</title>
+<style>
 
-<link rel="stylesheet" href="style.css">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#1f242d;
+color:white;
+}
+
+.header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#1f242d;
+z-index:100;
+}
+
+.logo{
+font-size:25px;
+font-weight:bold;
+}
+
+.navbar a{
+margin-left:30px;
+text-decoration:none;
+color:white;
+font-size:16px;
+}
+
+.navbar a:hover{
+color:#0ef;
+}
+
+section{
+padding:100px 10%;
+}
+
+.home{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.home-content h1{
+font-size:60px;
+}
+
+.home-content span{
+color:#0ef;
+}
+
+.btn{
+display:inline-block;
+padding:12px 28px;
+background:#0ef;
+border-radius:40px;
+color:black;
+margin-top:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.home-img img{
+width:300px;
+border-radius:20px;
+box-shadow:0 0 25px #0ef;
+}
+
+.about{
+text-align:center;
+}
+
+.skills ul{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+list-style:none;
+margin-top:20px;
+}
+
+.skills li{
+background:#323946;
+padding:15px;
+text-align:center;
+border-radius:10px;
+}
+
+.projects{
+text-align:center;
+}
+
+.project-card{
+background:#323946;
+padding:25px;
+margin:20px 0;
+border-radius:10px;
+}
+
+.project-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#0ef;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.project-btn:hover{
+background:white;
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#323946;
+}
+
+</style>
 
 </head>
 
@@ -20,41 +150,156 @@
 
 <nav class="navbar">
 
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Skills</a>
-<a href="#">Portfolio</a>
-<a href="#">Contact</a>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 
 </nav>
 
 </header>
 
-<section class="home">
+
+<section class="home" id="home">
 
 <div class="home-content">
 
 <h3>Hello, It's Me</h3>
 
-<h1>Jagdish</h1>
+<h1>Jagadish</h1>
 
-<h3>And I'm a <span>AI Developer</span></h3>
+<h3>And I'm an <span>AI Developer</span></h3>
 
 <p>
-I build AI systems using Machine Learning, Computer Vision and Data Science.
+I build AI systems using Machine Learning,
+Computer Vision and Data Science.
 </p>
 
-<a class="btn">Download CV</a>
+<a href="https://github.com/Jagdisj" class="btn">View GitHub</a>
 
 </div>
 
 <div class="home-img">
 
-<img src="profile.png">
+<img src="https://i.imgur.com/7yUvePI.png">
 
 </div>
 
 </section>
+
+
+
+<section class="about" id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am passionate about Artificial Intelligence, Machine Learning and Data Science.
+I build AI-powered applications that solve real-world problems.
+My projects include AI Fire & Smoke Detection System,
+Customer Churn Prediction and Fraud Analysis Dashboard.
+</p>
+
+</section>
+
+
+
+<section class="skills" id="skills">
+
+<h2>Skills</h2>
+
+<ul>
+
+<li>Python</li>
+<li>SQL</li>
+<li>Machine Learning</li>
+<li>Deep Learning</li>
+<li>Computer Vision</li>
+<li>YOLOv8</li>
+<li>Streamlit</li>
+<li>Data Analysis</li>
+
+</ul>
+
+</section>
+
+
+
+<section class="projects" id="projects">
+
+<h2>Projects</h2>
+
+<div class="project-card">
+
+<h3>🔥 AI Fire & Smoke Detection</h3>
+
+<p>
+Real-time fire and smoke detection using YOLOv8 with automatic alerts,
+screenshot capture and screen recording.
+</p>
+
+<a href="https://github.com/Jagdisj" class="project-btn">
+View Project
+</a>
+
+</div>
+
+
+
+<div class="project-card">
+
+<h3>📊 Customer Churn Prediction</h3>
+
+<p>
+Machine learning model that predicts telecom customer churn.
+</p>
+
+<a href="https://github.com/Jagdisj/customer-churn-prediction"
+class="project-btn">
+View Project
+</a>
+
+</div>
+
+
+
+<div class="project-card">
+
+<h3>💳 Fraud Analysis Dashboard</h3>
+
+<p>
+Interactive dashboard for detecting fraud patterns in financial data.
+</p>
+
+<a href="https://github.com/Jagdisj/fraud-analysis-dashboard"
+class="project-btn">
+View Project
+</a>
+
+</div>
+
+</section>
+
+
+
+<section class="contact" id="contact">
+
+<h2>Contact</h2>
+
+<p>GitHub: https://github.com/Jagdisj</p>
+
+<p>Portfolio: https://jagdisj.github.io</p>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2026 Jagdish Portfolio</p>
+
+</footer>
 
 </body>
 </html>
