@@ -1,1 +1,0 @@
-# jagdisj.github.io
