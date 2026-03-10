@@ -196,7 +196,24 @@ transform:scale(1.1);
 
 <h1>E Jagadish</h1>
 
-<h3>And I'm an <span>Data Scientist</span></h3>
+<h3>And I'm a <span id="typing"></span></h3>
+
+<script>
+
+const text = "Data Scientist";
+let index = 0;
+
+function typeEffect(){
+if(index < text.length){
+document.getElementById("typing").innerHTML += text.charAt(index);
+index++;
+setTimeout(typeEffect,100);
+}
+}
+
+typeEffect();
+
+</script>
 
 <p>
 I build AI systems using Machine Learning,
